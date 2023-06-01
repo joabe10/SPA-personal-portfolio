@@ -13,9 +13,104 @@
     --fonte-secundaria: 'Josefin Sans', sans-serif;
 }
 
-body {
-    font-family: var(--fonte-comi);
+* {
+    margin: 0;
+    padding: 0;
 }
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: #edf2fc;
+    font-family: sans-serif;
+    position: relative;
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > img {
+    max-width:150px; 
+    max-height:100px; 
+    width: auto; 
+    height: auto; 
+    cursor: pointer;
+}
+
+nav ul {
+    margin: 0 30px 0 0;/* observar a inserção do dark mode e margin aqui */
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #606163;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #ff4321;
+    transition: .5s;
+}
+
+.info {
+    margin-left: 8%;
+    margin-top: 15%;
+    margin-bottom: 20px;
+}
+
+.info h1 {
+    font-size: 70px;
+    color: #212121;
+}
+
+.info h1 span {
+    color: #ff4321;
+}
+
+.info p {
+    color: #606163;
+    line-height: 22px;
+}
+
+.info a {
+    background: #ff4321;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.container__img {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.container__img img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
 
 .preloader {
     background: #000;
@@ -23,66 +118,4 @@ body {
     width: 100%;
     position: fixed;
     z-index: 100;
-}
-
-.caixote__nav {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
-     height: 178px;
-    background-color: #F94F4F ;
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-}
-
-.caixote__nav--call {
-    color: white;
-    background-color: black;
-    padding: 1rem;
-}
-
-.logo__joabe {
-    width: 20%;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    text-align: center;
-} 
-
-.main__principal {
-    background-image: url('/SPA-personal-portfolio/assets/image-hero.jpg');
-    height: 100vh;
-}
-
-.main__principal--caixote {
-    /* display: flex;
-    flex-direction: column; */
-    gap: 1rem;
-    height: 40vh;
-
-}
-
-.main__principal--titulo {
-    font-size: 56px;
-    font-weight: 800;
-}
-
-.main__principal--texto {
-    font-size: 15px;    
-    font-weight: 400;
-}
-
-.main__principal--botao {
-    background-color: #F94F4F;
-    position: absolute;
-    width: 177px;
-    height: 72px;
-    left: 39px;
-    top: 562px;
-    color: white;
-    font-weight: 800;
-    font-size: 18px;
-    text-decoration: none;
-    
 }
