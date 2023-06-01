@@ -109,8 +109,16 @@ nav ul li a:hover {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
 }
 
+.container__img:hover .container__imb--fundo {
+    bottom: 40px;
+}
+
+.container__img:hover .container__imb--frente {
+    left: 54%;
+}
 
 .preloader {
     background: #000;
