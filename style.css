@@ -251,8 +251,9 @@ nav ul li a:hover {
     touch-action: manipulation;
 }
 
-.preloader {
-    background: #000;
+#preloader {
+    background: #ffffff url(/SPA-personal-portfolio/assets/loader.gif) no-repeat center;
+    background-size: 13%;
     height: 100vh;
     width: 100%;
     position: fixed;
