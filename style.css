@@ -13,7 +13,7 @@
 }
 
 .dark__theme {
-    --cor-principal: linear-gradient(to top, #000000 0%, #8F95D3 100%);
+    --cor-principal: linear-gradient(to top, #000000 0%, #030627 100%);
     --cor-secundária: #fff;
 }
 
@@ -253,7 +253,7 @@ nav ul li a:hover {
 
 #preloader {
     background: #ffffff url(/SPA-personal-portfolio/assets/loader.gif) no-repeat center;
-    background-size: 13%;
+    background-size: 10%;
     height: 100vh;
     width: 100%;
     position: fixed;
