@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap');
 :root {
     --cor-principal: linear-gradient(to top, #FFFFFF, #ECE9E6); 
-    --cor-secundária: #212121
+    --cor-secundária: #212121;
+    --cor-tercearia: #ff4321;
 
     --cor-de-gradiente1: linear-gradient(to top, #22031F 0%, #320E3B 100%);
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
@@ -60,7 +61,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: none;
-    color: #ff4321;
+    color: var(--cor-tercearia);
     transition: .5s;
 }
 
@@ -82,7 +83,7 @@ nav ul li a:hover {
 }
 
 .info h1 span {
-    color: #ff4321;
+    color: var(--cor-tercearia);
 }
 
 .info p {
@@ -143,7 +144,7 @@ nav ul li a:hover {
 }
 
 .info__download:before {
-  background-image: linear-gradient(92.83deg, #ff4321 0, #f93a13 100%);
+  background-image: linear-gradient(92.83deg,var(--cor-tercearia) 0, #f93a13 100%);
   content: "";
   display: block;
   height: 100%;
@@ -245,7 +246,7 @@ nav ul li a:hover {
 
 .social-links a:hover {
     transition: 0.5s;
-    color: #ff4321;
+    color: var(--cor-tercearia);
     cursor: pointer;
     user-select: none;
     touch-action: manipulation;
@@ -259,6 +260,93 @@ nav ul li a:hover {
     position: fixed;
     z-index: 100;
 }
+
+.caixote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vw; */
+    flex-direction: column;
+    gap: 1rem;
+}
+ 
+#caixote__titulo {
+    color: #141e30;
+    font-size: 2.5rem;
+}
+
+#caixote__linha {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* aqui começa */
+html {
+    height: 110%;
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 500px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient( var(--cor-tercearia), #141e30);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  .login-box~span {
+    color: var(--cor-tercearia);
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size:16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--cor-tercearia);
+    font-size: 14px;
+  }
+  
+  
+/* aqui termina */
 
 @media screen and (max-width:412px) {
     nav ul {
@@ -280,7 +368,7 @@ nav ul li a:hover {
     }
     
     .info h1 span {
-        color: #ff4321;
+        color: var(--cor-tercearia);
     }
     
     .info p {
